@@ -20,6 +20,7 @@ class Contract extends Employee{
         this.extratime = extratime
     }
     ToString(){
-        return super.ToString()+`Status ${this.status}, Ex`
+        return super.ToString()+` Status ${this.status}, Extra ${this.extratime}`
     }
 }
+export{Contract}

@@ -1,9 +1,22 @@
 export default class Product {
-  constructor(prodId, prodName, category, price = 0, totalBuy = 1) {}
+  constructor(prodId, prodName, category, price = 0, totalBuy = 1) {
+     this.prodId = prodId;
+     this.prodName = prodName;
+     this.category = category;
+     this.price = price;
+     this.totalBuy = totalBuy
 
-  setPrice(price) {}
+  }
 
-  setTotalBuy(total) {}
+  setPrice(price) {
+    return price
+  }
 
-  toString() {}
+  setTotalBuy(total) {
+    return total;
+  }
+
+  toString() {
+
+  }
 }
