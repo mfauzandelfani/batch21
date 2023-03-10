@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Inheritance_1 = require("./Inheritance");
+var Polymorphism_1 = require("./Polymorphism");
+var venom = new Inheritance_1.Hennessey("Hennessey", 270, 1200000, "Venom GT");
+var agera = new Inheritance_1.Koenigsegg("Koenigsegg", 273, 2500000, "Agera RS");
+var cars = [agera, venom];
+var competition = new Polymorphism_1.Competition(cars, 1200);
+competition.getCars();
+competition.race();
+console.log(competition.winner());
